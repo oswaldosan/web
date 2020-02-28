@@ -1,10 +1,15 @@
 import React from 'react'
 
 
+
+
+
+
+
 const Boton = () => {
     return (
         <div>
-            <button>PRESIONAME BEBE</button>
+            <button className="btn btn-light">PRESIONAME BEBE</button>
         </div>
     )
 }
