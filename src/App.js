@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './img/ninja.png';
+import logo from './img/ninjatony.png';
 import './App.css';
 import Boton from './components/boton'
 
