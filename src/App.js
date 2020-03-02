@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p> <h1>TonyLoops</h1> </p>
+        <p> <h1>TonyLoops Trest Clone</h1> </p>
           <Boton></Boton>
        </header>
     </div>
