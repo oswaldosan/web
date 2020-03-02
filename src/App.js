@@ -3,6 +3,7 @@ import logo from './img/ninjatony.png';
 import './App.css';
 import Boton from './components/boton'
 import Headerbar from './components/header'
+import styled, { css } from 'styled-components'
 
 
 
@@ -22,3 +23,8 @@ function App() {
 }
 
 export default App;
+
+
+const Button = styled.Headerbar`
+  background: steelblue;
+`
