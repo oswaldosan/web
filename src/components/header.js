@@ -22,4 +22,5 @@ export default Headerbar
 const Cabecera = styled.div`
   background: ${(props) => (props.primary = true ? 'steelblue' : 'red')};
   padding: 15px;
+  border-bottom: 1px solid white;
 `

@@ -3,6 +3,7 @@ import logo from './img/ninjatony.png';
 import './App.css';
 import Boton from './components/boton'
 import Headerbar from './components/header'
+import styled, { css } from 'styled-components'
 
 
 function App() {
@@ -11,8 +12,7 @@ function App() {
     <Headerbar></Headerbar>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p> <h1>TonyLoops Trest Clone</h1> </p>
+           <Titulos>React Tests</Titulos>
           <Boton></Boton>
        </header>
     </div>
@@ -21,3 +21,8 @@ function App() {
 }
 
 export default App;
+
+const Titulos = styled.div`
+   font-size: 25px;
+   padding: 20px;
+`
