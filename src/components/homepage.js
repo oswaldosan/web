@@ -18,8 +18,8 @@ const Barraslide = () => {
   return (
     <animated.div style={props}>
       <div className="barrasslider">
-        <h1 className="titulos">Welcome to my house</h1>
-        <h2>Web Dev</h2>
+        <div className="titulos">I'm Tony Sanchez</div>
+        <h2>Frontend Web Developer</h2>
         <Modalbutton></Modalbutton>
       </div>
     </animated.div>
