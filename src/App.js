@@ -1,28 +1,19 @@
-import React from 'react';
-import logo from './img/ninjatony.png';
-import './App.css';
-import Boton from './components/boton'
-import Headerbar from './components/header'
-import styled, { css } from 'styled-components'
-
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Homepage from "./components/homepage";
+import Aboutpage from "./components/about";
 
 function App() {
   return (
-  <div>
-    <Headerbar></Headerbar>
-    <div className="App">
-      <header className="App-header">
-           <Titulos>React Tests</Titulos>
-          <Boton></Boton>
-       </header>
+    <div>
+      <Router>
+        <React.Fragment>
+          <Route exact path="/" component={Homepage}></Route>
+          <Route exact path="/about" component={Aboutpage}></Route>
+        </React.Fragment>
+      </Router>
     </div>
-  </div>  
   );
 }
 
 export default App;
-
-const Titulos = styled.div`
-   font-size: 25px;
-   padding: 20px;
-`
