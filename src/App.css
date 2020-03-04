@@ -1,5 +1,19 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("Helvetica.ttf") format("truetype");
+}
+
 body {
-  background-color: steelblue;
+  font-family: Helvetica;
+  background-color: white;
+}
+
+body p {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.24px;
+  color: rgb(109, 118, 147);
 }
 
 .App {
@@ -19,3 +33,78 @@ body {
   color: #61dafb;
 }
 
+.logo {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.titulos {
+  font-family: Helvetica;
+  font-weight: 800;
+  font-size: 46px;
+  color: rgb(54, 81, 87);
+}
+
+.barrasslider {
+  padding: 90px;
+  text-align: center;
+  background-image: linear-gradient(aliceblue, azure);
+}
+
+.barrasslider h2 {
+  margin: 20px;
+  font-family: Helvetica;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  color: rgb(1, 191, 227);
+  animation: shine 10s infinite linear;
+  -webkit-animation: shine s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    color: rgb(1, 191, 227);
+  }
+  15% {
+    color: rgb(51, 125, 141);
+  }
+  45% {
+    color: rgb(0, 81, 92);
+  }
+  65% {
+    color: rgb(54, 81, 87);
+  }
+  100% {
+    color: rgb(1, 191, 227);
+  }
+}
+
+.contentbar {
+  position: relative;
+  z-index: 1;
+  height: 300px;
+  color: white;
+  display: flex;
+  font-family: Helvetica;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: linear-gradient(
+    20.03deg,
+    rgb(255, 197, 143) -24.01%,
+    rgb(255, 124, 124) 86.23%
+  );
+  overflow: hidden;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+}
